@@ -1,12 +1,48 @@
 /* FONTS */
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
+      url("../fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Thin.woff2") format("woff2"),
+      url("../fonts/PublicSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/PublicSans-Medium.woff2") format("woff2"),
+      url("../fonts/PublicSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"),
+      url("../fonts/LexendDeca-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 :root {
-  --text-color: ;
-  --text-black-color: ;
-  --accent-color: ;
+  --text-color: #9597a5;
+  --heading-color: #2d314d;
+  --accent-color: #30c88f;
   --outline-color: ;
-  --body-bg-color: ;
+  --button-bg-color: #33D35E;
   --footer-bg-color: ;
 }
 
@@ -28,11 +64,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Public Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  background-color: var(--body-bg-color);
+  line-height: 26px;
+  background-color: #fafafa;
   color: var(--text-color);
 }
 
@@ -45,7 +81,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1150px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -73,11 +109,13 @@ img {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  border: 0;
-  color: ;
+  padding: 8px 36px 8px 33px;
+  border-radius: 22px;
+  color: #fff;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  background-color: var(--button-bg-color);
   border-radius: 28px;
-  background-color: ;
-  transition: ;
+  transition: opacity 0.4s ease;
 }
 .button:hover {
 
@@ -85,6 +123,59 @@ img {
 .button:active {
 
 }
+
+/* SITE HEADER */
+
+.site-header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: inline-block;
+}
+.site-header__logo {
+  margin-right: auto;
+}
+.logo__img {
+  width: 139px;
+  height: 20px;
+}
+.sitenav {
+}
+.site-header__nav {
+  margin-left: 30px;
+  margin-right: 226px;
+}
+.sitenav__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.sitenav__item {
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 30px;
+}
+.sitenav__link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.11px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.site-header__button {
+}
+
+
 /* MAIN CONTENT */
 
 .main {
