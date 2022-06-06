@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
-      url("../fonts/PublicSans-Regular.woff") format("woff");
+  url("../fonts/PublicSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Thin.woff2") format("woff2"),
-      url("../fonts/PublicSans-Thin.woff") format("woff");
+  url("../fonts/PublicSans-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Medium.woff2") format("woff2"),
-      url("../fonts/PublicSans-Medium.woff") format("woff");
+  url("../fonts/PublicSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 @font-face {
   font-family: "Lexend Deca";
   src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"),
-      url("../fonts/LexendDeca-Regular.woff") format("woff");
+  url("../fonts/LexendDeca-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -129,6 +129,7 @@ img {
 .site-header {
   padding-top: 18px;
   padding-bottom: 18px;
+  background-color: #fff;
 }
 
 .site-header__container {
@@ -175,6 +176,51 @@ img {
   margin-left: 30px;
 }
 
+/* HERO */
+
+.hero {
+  z-index: -2;
+  position: relative;
+  background-image: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 603px) -256px;
+}
+
+.hero__container {
+  padding-top: 170px;
+  padding-bottom: 170px;
+  padding-left: 26px;
+}
+.hero-content {
+  width: 100%;
+  max-width: 447px;
+
+}
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 100;
+  font-size: 59px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: var(--heading-color);
+}
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28px;
+}
+
+.hero__img {
+  width: 729px;
+  height: 900px;
+  position: absolute;
+  left: calc(50% + 95px);
+  top: -93px;
+  z-index: -1;
+}
 
 /* MAIN CONTENT */
 
