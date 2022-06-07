@@ -221,7 +221,7 @@ img {
   position: relative;
   background-image: url(../img/hero-bg.png);
   background-repeat: no-repeat;
-  background-position: calc(50% + 603px) -256px;
+  background-position: calc(50% + 603px) -264px;
 }
 
 .hero__container {
