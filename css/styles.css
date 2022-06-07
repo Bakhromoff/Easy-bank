@@ -377,14 +377,22 @@ img {
   line-height: 18px;
   letter-spacing: -0.16px;
 }
-.article-item__title {
+.article-item__link {
+  text-decoration: none;
   margin-top: 0;
   margin-bottom: 8px;
   font-weight: 100;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -0.29px;
+  letter-spacing: -0.28px;
   color: var(--heading-color);
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.article-item__link:hover {
+  color: var(--accent-color);
+}
+.article-item__link:active {
+  opacity: 0.6;
 }
 .article-item__info {
   width: 207px;
